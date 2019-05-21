@@ -1,17 +1,12 @@
-//
-//  AppDelegate.swift
-//  DreamBrokerTest
-//
-//  Created by Artem Abramov on 21/05/2019.
-//  Copyright © 2019 Artem Abramov. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    class var delegate: AppDelegate { return UIApplication.shared.delegate as! AppDelegate }
 
     var window: UIWindow?
+    let appController = AppController()
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {

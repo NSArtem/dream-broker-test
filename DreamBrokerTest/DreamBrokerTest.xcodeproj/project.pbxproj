@@ -12,6 +12,9 @@
 		AC10BCAB2293F9EE0086E59F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC10BCA92293F9EE0086E59F /* Main.storyboard */; };
 		AC10BCAD2293F9EF0086E59F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC10BCAC2293F9EF0086E59F /* Assets.xcassets */; };
 		AC10BCB02293F9EF0086E59F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC10BCAE2293F9EF0086E59F /* LaunchScreen.storyboard */; };
+		AC10BCB82293FB020086E59F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10BCB72293FB020086E59F /* Network.swift */; };
+		AC10BCBA2293FC7D0086E59F /* ImageList.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10BCB92293FC7D0086E59F /* ImageList.swift */; };
+		AC10BCBC229401930086E59F /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10BCBB229401930086E59F /* AppController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		AC10BCAC2293F9EF0086E59F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC10BCAF2293F9EF0086E59F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC10BCB12293F9EF0086E59F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC10BCB72293FB020086E59F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		AC10BCB92293FC7D0086E59F /* ImageList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageList.swift; sourceTree = "<group>"; };
+		AC10BCBB229401930086E59F /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				AC10BCA52293F9EE0086E59F /* AppDelegate.swift */,
+				AC10BCB72293FB020086E59F /* Network.swift */,
+				AC10BCBB229401930086E59F /* AppController.swift */,
+				AC10BCB92293FC7D0086E59F /* ImageList.swift */,
 				AC10BCA72293F9EE0086E59F /* ViewController.swift */,
 				AC10BCA92293F9EE0086E59F /* Main.storyboard */,
 				AC10BCAC2293F9EF0086E59F /* Assets.xcassets */,
@@ -137,6 +146,9 @@
 			files = (
 				AC10BCA82293F9EE0086E59F /* ViewController.swift in Sources */,
 				AC10BCA62293F9EE0086E59F /* AppDelegate.swift in Sources */,
+				AC10BCBA2293FC7D0086E59F /* ImageList.swift in Sources */,
+				AC10BCBC229401930086E59F /* AppController.swift in Sources */,
+				AC10BCB82293FB020086E59F /* Network.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
