@@ -20,9 +20,9 @@ struct Network {
             }
             do {
                 let object = try self.jsonDecoder.decode(T.self, from: data)
-                completion(.success(object))
+                DispatchQueue.main.async { completion(.success(object)) }
             } catch {
-                completion(.failure(.jsonParsing))
+                DispatchQueue.main.async { completion(.failure(.jsonParsing)) }
             }
         }
         task.resume()
