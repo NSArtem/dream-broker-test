@@ -6,9 +6,12 @@ class ImagesListViewController: UIViewController {
     var viewModel = ImagesListViewModel()
     var updatingData = false
     var refreshButton: UIBarButtonItem!
+    var numberOfItems = defaultNumberOfItems
     
     @IBOutlet var notificationLabel: UILabel!
     @IBOutlet var tableView: UITableView!
+    @IBOutlet var numberOfItemsLabel: UILabel!
+    @IBOutlet var numberOfItemsStepper: UIStepper!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,6 +23,10 @@ class ImagesListViewController: UIViewController {
         self.navigationItem.rightBarButtonItem = refreshButton
         tableView.estimatedRowHeight = 292
         tableView.rowHeight = UITableView.automaticDimension
+        
+        numberOfItemsLabel.text = "\(numberOfItems) items"
+        numberOfItemsStepper.value = Double(numberOfItems)
+        numberOfItemsStepper.maximumValue = 15
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,7 +40,7 @@ class ImagesListViewController: UIViewController {
         updatingData = true
         notificationLabel.text = "Loading images..."
         refreshButton.isEnabled = false
-        viewModel.updateData { [weak self] (result) in
+        viewModel.updateData(items: numberOfItems) { [weak self] (result) in
             switch result {
             case .success(let urls):
                 urls.forEach() { print ($0.url.absoluteString) }
@@ -55,6 +62,8 @@ class ImagesListViewController: UIViewController {
     }
     
     @IBAction func NumberOfItemsStepperPressed(_ sender: UIStepper, forEvent event: UIEvent) {
+        numberOfItems = Int(sender.value)
+        numberOfItemsLabel.text = "\(numberOfItems) items"
     }
     
     private func animateTableViewCells() {

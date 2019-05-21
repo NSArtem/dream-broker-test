@@ -86,7 +86,7 @@
                             <view alpha="0.75" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ujC-Wr-G3h">
                                 <rect key="frame" x="0.0" y="798" width="414" height="64"/>
                                 <subviews>
-                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Bjx-Kc-6fx">
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" autorepeat="NO" value="5" maximumValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="Bjx-Kc-6fx">
                                         <rect key="frame" x="24" y="17.5" width="94" height="29"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
@@ -131,6 +131,8 @@
                     <navigationItem key="navigationItem" title="Critique" id="fYx-AS-dWH"/>
                     <connections>
                         <outlet property="notificationLabel" destination="sNR-Ih-vRc" id="ogs-C0-17L"/>
+                        <outlet property="numberOfItemsLabel" destination="1n8-GD-BuY" id="m67-8H-2xc"/>
+                        <outlet property="numberOfItemsStepper" destination="Bjx-Kc-6fx" id="eIC-m9-Mzg"/>
                         <outlet property="tableView" destination="LWU-4V-1bq" id="Uma-jp-RYs"/>
                     </connections>
                 </viewController>
