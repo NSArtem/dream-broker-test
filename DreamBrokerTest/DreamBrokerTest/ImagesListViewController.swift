@@ -39,6 +39,9 @@ class ImagesListViewController: UIViewController {
                 urls.forEach() { print ($0.url.absoluteString) }
                 self?.tableView.isHidden = false
                 self?.tableView.reloadData()
+                DispatchQueue.main.async { [weak self] in
+                    self?.animateTableViewCells()
+                }
             case .failure(_):
                 self?.notificationLabel.text = "Failed to load images"
             }
@@ -65,7 +68,7 @@ class ImagesListViewController: UIViewController {
             if indexPath.row == 1 {
                 print (relativePosition)
             }
-            let angle = relativePosition * (10 * .pi / 180.0)  //convert degrees to radians
+            let angle = relativePosition * (5 * .pi / 180.0)  //convert degrees to radians
             cell.animationView.transform = CGAffineTransform.identity.rotated(by: angle)
         }
     }
@@ -96,7 +99,6 @@ extension ImagesListViewController: UITableViewDataSource, UITableViewDelegate, 
             ]
         )
         cell.imageTextLabel.text = displayedImage.text
-        animateTableViewCells()
     }
     
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
