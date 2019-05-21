@@ -92,6 +92,7 @@ extension ImagesListViewController: UITableViewDataSource, UITableViewDelegate, 
         let processor = DownsamplingImageProcessor(size: cell.displayedImage.frame.size)
         cell.displayedImage.kf.setImage(
             with: displayedImage.url,
+            placeholder: UIImage(named: "placeholder"),
             options: [
                 .processor(processor),
                 .scaleFactor(UIScreen.main.scale),
