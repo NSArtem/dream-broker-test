@@ -60,6 +60,7 @@
                                                 <constraint firstItem="fgw-tp-6Ya" firstAttribute="leading" secondItem="5Py-2F-Tq4" secondAttribute="leading" constant="16" id="xKi-KC-HE5"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="displayedImage" destination="fgw-tp-6Ya" id="Pke-hT-r6m"/>
                                             <outlet property="imageTextLabel" destination="BVZ-Kt-qjo" id="di3-JX-Bh5"/>
