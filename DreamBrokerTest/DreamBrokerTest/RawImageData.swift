@@ -1,6 +1,6 @@
 import Foundation
 
-struct ImageList: Decodable {
+struct RawImageData: Decodable {
     let baseURL: String
     let apiPath: String
     let extensions: [String]

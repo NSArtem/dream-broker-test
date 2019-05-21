@@ -5,11 +5,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         AppDelegate.delegate.appController.buildImageList { (result) in
-            print (result)
+            switch result {
+            case .success(let urls): urls.forEach() { print ($0.absoluteString) }
+            default: return
+            }
         }
-        
     }
-
-
 }
 
