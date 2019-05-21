@@ -66,10 +66,7 @@ class ImagesListViewController: UIViewController {
                 print (relativePosition)
             }
             let angle = relativePosition * (10 * .pi / 180.0)  //convert degrees to radians
-            cell.imageView?.layer.anchorPoint = CGPoint(x: 0.5, y: 0.5)
-            cell.imageView?.transform = CGAffineTransform.identity.rotated(by: angle)
-            cell.imageView?.transform = CGAffineTransform.identity.rotated(by: angle)
-            cell.imageTextLabel.transform = CGAffineTransform.identity.rotated(by: angle)
+            cell.animationView.transform = CGAffineTransform.identity.rotated(by: angle)
         }
     }
 }
