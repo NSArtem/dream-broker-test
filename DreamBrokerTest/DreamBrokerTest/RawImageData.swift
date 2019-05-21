@@ -12,6 +12,6 @@ struct RawImageData: Decodable {
         case apiPath = "api_path"
         case extensions
         case fileSizes = "file_sizes"
-        case imageTexts = "images_texts"
+        case imageTexts = "image_texts"
     }
 }

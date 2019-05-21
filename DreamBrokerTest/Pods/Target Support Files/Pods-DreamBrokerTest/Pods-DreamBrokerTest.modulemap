@@ -1,0 +1,6 @@
+framework module Pods_DreamBrokerTest {
+  umbrella header "Pods-DreamBrokerTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

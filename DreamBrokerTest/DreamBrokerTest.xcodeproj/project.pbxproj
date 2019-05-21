@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0969B526FD7CF70C6E8160D1 /* Pods_DreamBrokerTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71CE7829467AA28408873555 /* Pods_DreamBrokerTest.framework */; };
 		AC10BCA62293F9EE0086E59F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10BCA52293F9EE0086E59F /* AppDelegate.swift */; };
 		AC10BCA82293F9EE0086E59F /* ImagesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10BCA72293F9EE0086E59F /* ImagesListViewController.swift */; };
 		AC10BCAB2293F9EE0086E59F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC10BCA92293F9EE0086E59F /* Main.storyboard */; };
@@ -15,9 +16,14 @@
 		AC10BCB82293FB020086E59F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10BCB72293FB020086E59F /* Network.swift */; };
 		AC10BCBA2293FC7D0086E59F /* RawImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10BCB92293FC7D0086E59F /* RawImageData.swift */; };
 		AC10BCBE2294155D0086E59F /* ImagesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10BCBD2294155D0086E59F /* ImagesListViewModel.swift */; };
+		AC10BCC2229434F80086E59F /* ImagesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10BCC1229434F80086E59F /* ImagesListCell.swift */; };
+		AC10BCC422943BEF0086E59F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10BCC322943BEF0086E59F /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		100BE91FBC9A9A7525D39A48 /* Pods-DreamBrokerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamBrokerTest.release.xcconfig"; path = "Target Support Files/Pods-DreamBrokerTest/Pods-DreamBrokerTest.release.xcconfig"; sourceTree = "<group>"; };
+		6A845624BC1CF5C9CC1F4B10 /* Pods-DreamBrokerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DreamBrokerTest.debug.xcconfig"; path = "Target Support Files/Pods-DreamBrokerTest/Pods-DreamBrokerTest.debug.xcconfig"; sourceTree = "<group>"; };
+		71CE7829467AA28408873555 /* Pods_DreamBrokerTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DreamBrokerTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC10BCA22293F9EE0086E59F /* DreamBrokerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamBrokerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC10BCA52293F9EE0086E59F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC10BCA72293F9EE0086E59F /* ImagesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +34,8 @@
 		AC10BCB72293FB020086E59F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		AC10BCB92293FC7D0086E59F /* RawImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawImageData.swift; sourceTree = "<group>"; };
 		AC10BCBD2294155D0086E59F /* ImagesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListViewModel.swift; sourceTree = "<group>"; };
+		AC10BCC1229434F80086E59F /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListCell.swift; sourceTree = "<group>"; };
+		AC10BCC322943BEF0086E59F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +43,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0969B526FD7CF70C6E8160D1 /* Pods_DreamBrokerTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DB595E3B8672726AFDDAE18 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A845624BC1CF5C9CC1F4B10 /* Pods-DreamBrokerTest.debug.xcconfig */,
+				100BE91FBC9A9A7525D39A48 /* Pods-DreamBrokerTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		296D5B0F972781D03376CB69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71CE7829467AA28408873555 /* Pods_DreamBrokerTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC10BC992293F9EE0086E59F = {
 			isa = PBXGroup;
 			children = (
 				AC10BCA42293F9EE0086E59F /* DreamBrokerTest */,
 				AC10BCA32293F9EE0086E59F /* Products */,
+				1DB595E3B8672726AFDDAE18 /* Pods */,
+				296D5B0F972781D03376CB69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,9 +91,11 @@
 			children = (
 				AC10BCA52293F9EE0086E59F /* AppDelegate.swift */,
 				AC10BCB72293FB020086E59F /* Network.swift */,
+				AC10BCC322943BEF0086E59F /* Utils.swift */,
 				AC10BCB92293FC7D0086E59F /* RawImageData.swift */,
 				AC10BCA72293F9EE0086E59F /* ImagesListViewController.swift */,
 				AC10BCBD2294155D0086E59F /* ImagesListViewModel.swift */,
+				AC10BCC1229434F80086E59F /* ImagesListCell.swift */,
 				AC10BCA92293F9EE0086E59F /* Main.storyboard */,
 				AC10BCAC2293F9EF0086E59F /* Assets.xcassets */,
 				AC10BCAE2293F9EF0086E59F /* LaunchScreen.storyboard */,
@@ -80,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC10BCB42293F9EF0086E59F /* Build configuration list for PBXNativeTarget "DreamBrokerTest" */;
 			buildPhases = (
+				8A8192CBD87FA36A931C30E0 /* [CP] Check Pods Manifest.lock */,
 				AC10BC9E2293F9EE0086E59F /* Sources */,
 				AC10BC9F2293F9EE0086E59F /* Frameworks */,
 				AC10BCA02293F9EE0086E59F /* Resources */,
+				82E3B651CC61814750A59D4F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +172,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		82E3B651CC61814750A59D4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DreamBrokerTest/Pods-DreamBrokerTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DreamBrokerTest/Pods-DreamBrokerTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A8192CBD87FA36A931C30E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DreamBrokerTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AC10BC9E2293F9EE0086E59F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -147,8 +227,10 @@
 				AC10BCA82293F9EE0086E59F /* ImagesListViewController.swift in Sources */,
 				AC10BCA62293F9EE0086E59F /* AppDelegate.swift in Sources */,
 				AC10BCBE2294155D0086E59F /* ImagesListViewModel.swift in Sources */,
+				AC10BCC422943BEF0086E59F /* Utils.swift in Sources */,
 				AC10BCBA2293FC7D0086E59F /* RawImageData.swift in Sources */,
 				AC10BCB82293FB020086E59F /* Network.swift in Sources */,
+				AC10BCC2229434F80086E59F /* ImagesListCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +374,7 @@
 		};
 		AC10BCB52293F9EF0086E59F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A845624BC1CF5C9CC1F4B10 /* Pods-DreamBrokerTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,6 +392,7 @@
 		};
 		AC10BCB62293F9EF0086E59F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 100BE91FBC9A9A7525D39A48 /* Pods-DreamBrokerTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

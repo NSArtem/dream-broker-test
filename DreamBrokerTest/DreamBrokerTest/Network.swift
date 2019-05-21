@@ -1,4 +1,5 @@
 import Foundation
+import UIKit
 
 enum NetworkError: Error {
     case badURL
@@ -6,6 +7,8 @@ enum NetworkError: Error {
     case jsonParsing
     case image
 }
+
+let cache = NSCache<NSString, UIImage>()
 
 struct Network {
     let jsonDecoder = JSONDecoder()
