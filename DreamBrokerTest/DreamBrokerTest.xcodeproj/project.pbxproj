@@ -17,7 +17,6 @@
 		AC10BCBA2293FC7D0086E59F /* RawImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10BCB92293FC7D0086E59F /* RawImageData.swift */; };
 		AC10BCBE2294155D0086E59F /* ImagesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10BCBD2294155D0086E59F /* ImagesListViewModel.swift */; };
 		AC10BCC2229434F80086E59F /* ImagesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10BCC1229434F80086E59F /* ImagesListCell.swift */; };
-		AC10BCC422943BEF0086E59F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10BCC322943BEF0086E59F /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,7 +34,6 @@
 		AC10BCB92293FC7D0086E59F /* RawImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawImageData.swift; sourceTree = "<group>"; };
 		AC10BCBD2294155D0086E59F /* ImagesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListViewModel.swift; sourceTree = "<group>"; };
 		AC10BCC1229434F80086E59F /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListCell.swift; sourceTree = "<group>"; };
-		AC10BCC322943BEF0086E59F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +54,6 @@
 				6A845624BC1CF5C9CC1F4B10 /* Pods-DreamBrokerTest.debug.xcconfig */,
 				100BE91FBC9A9A7525D39A48 /* Pods-DreamBrokerTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -91,7 +88,6 @@
 			children = (
 				AC10BCA52293F9EE0086E59F /* AppDelegate.swift */,
 				AC10BCB72293FB020086E59F /* Network.swift */,
-				AC10BCC322943BEF0086E59F /* Utils.swift */,
 				AC10BCB92293FC7D0086E59F /* RawImageData.swift */,
 				AC10BCA72293F9EE0086E59F /* ImagesListViewController.swift */,
 				AC10BCBD2294155D0086E59F /* ImagesListViewModel.swift */,
@@ -227,7 +223,6 @@
 				AC10BCA82293F9EE0086E59F /* ImagesListViewController.swift in Sources */,
 				AC10BCA62293F9EE0086E59F /* AppDelegate.swift in Sources */,
 				AC10BCBE2294155D0086E59F /* ImagesListViewModel.swift in Sources */,
-				AC10BCC422943BEF0086E59F /* Utils.swift in Sources */,
 				AC10BCBA2293FC7D0086E59F /* RawImageData.swift in Sources */,
 				AC10BCB82293FB020086E59F /* Network.swift in Sources */,
 				AC10BCC2229434F80086E59F /* ImagesListCell.swift in Sources */,
