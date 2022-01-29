@@ -13,7 +13,7 @@
 		AC10BCAD2293F9EF0086E59F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC10BCAC2293F9EF0086E59F /* Assets.xcassets */; };
 		AC10BCB02293F9EF0086E59F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC10BCAE2293F9EF0086E59F /* LaunchScreen.storyboard */; };
 		AC10BCB82293FB020086E59F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10BCB72293FB020086E59F /* Network.swift */; };
-		AC10BCBA2293FC7D0086E59F /* RawImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10BCB92293FC7D0086E59F /* RawImageData.swift */; };
+		AC10BCBA2293FC7D0086E59F /* ImagesMorphemes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10BCB92293FC7D0086E59F /* ImagesMorphemes.swift */; };
 		AC10BCBE2294155D0086E59F /* ImagesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10BCBD2294155D0086E59F /* ImagesListViewModel.swift */; };
 		AC10BCC2229434F80086E59F /* ImagesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC10BCC1229434F80086E59F /* ImagesListCell.swift */; };
 		AC186EB127A4DF84009E65DF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AC186EB027A4DF84009E65DF /* Kingfisher */; };
@@ -28,7 +28,7 @@
 		AC10BCAF2293F9EF0086E59F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC10BCB12293F9EF0086E59F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC10BCB72293FB020086E59F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
-		AC10BCB92293FC7D0086E59F /* RawImageData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RawImageData.swift; sourceTree = "<group>"; };
+		AC10BCB92293FC7D0086E59F /* ImagesMorphemes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesMorphemes.swift; sourceTree = "<group>"; };
 		AC10BCBD2294155D0086E59F /* ImagesListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListViewModel.swift; sourceTree = "<group>"; };
 		AC10BCC1229434F80086E59F /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListCell.swift; sourceTree = "<group>"; };
 		AC186EB227A4E255009E65DF /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 			children = (
 				AC10BCA52293F9EE0086E59F /* AppDelegate.swift */,
 				AC10BCB72293FB020086E59F /* Network.swift */,
-				AC10BCB92293FC7D0086E59F /* RawImageData.swift */,
+				AC10BCB92293FC7D0086E59F /* ImagesMorphemes.swift */,
 				AC10BCA72293F9EE0086E59F /* ImagesListViewController.swift */,
 				AC10BCBD2294155D0086E59F /* ImagesListViewModel.swift */,
 				AC10BCC1229434F80086E59F /* ImagesListCell.swift */,
@@ -160,7 +160,7 @@
 				AC10BCA82293F9EE0086E59F /* ImagesListViewController.swift in Sources */,
 				AC10BCA62293F9EE0086E59F /* AppDelegate.swift in Sources */,
 				AC10BCBE2294155D0086E59F /* ImagesListViewModel.swift in Sources */,
-				AC10BCBA2293FC7D0086E59F /* RawImageData.swift in Sources */,
+				AC10BCBA2293FC7D0086E59F /* ImagesMorphemes.swift in Sources */,
 				AC10BCB82293FB020086E59F /* Network.swift in Sources */,
 				AC10BCC2229434F80086E59F /* ImagesListCell.swift in Sources */,
 			);
@@ -239,7 +239,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -294,7 +294,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

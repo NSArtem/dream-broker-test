@@ -12,10 +12,10 @@ let cache = NSCache<NSString, UIImage>()
 
 struct Network {
     let jsonDecoder = JSONDecoder()
-    
-    func fetch<T: Decodable>(url: String, typeOf: T.Type, completion: @escaping (Result<T, NetworkError>) -> Void) {
-        guard let url = URL(string: url) else { (completion(.failure(.badURL))); return }
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+
+    func fetch<T: Decodable>(url: String, typeOf _: T.Type, completion: @escaping (Result<T, NetworkError>) -> Void) {
+        guard let url = URL(string: url) else { completion(.failure(.badURL)); return }
+        let task = URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
                 print(error?.localizedDescription ?? "Failed to fetch \(url)")
                 completion(.failure(.failedToLoad))
@@ -30,17 +30,10 @@ struct Network {
         }
         task.resume()
     }
-    
-    func fetch(url: String, completion: @escaping (Result<Data, NetworkError>) -> Void) {
-        guard let url = URL(string: url) else { (completion(.failure(.badURL))); return }
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            guard let data = data else {
-                print(error?.localizedDescription ?? "Failed to fetch \(url)")
-                completion(.failure(.failedToLoad))
-                return
-            }
-            completion(.success(data))
-        }
-        task.resume()
+
+    func fetch<T: Decodable>(url: String, typeOf _: T.Type) async throws -> T {
+        guard let url = URL(string: url) else { throw NetworkError.badURL }
+        let (data, _) = try await URLSession.shared.data(for: URLRequest(url: url))
+        return try jsonDecoder.decode(T.self, from: data)
     }
 }
